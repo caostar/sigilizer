@@ -1,4 +1,11 @@
-sigilizer
+Sigilizer
+
+=========
+
+This repository is under the Do What The Fuck You Want To Public License (WTFPL)
+
+http://www.wtfpl.net/about/
+
 =========
 
 A script that generate sigils from input intents.
