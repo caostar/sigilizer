@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sigilizer Example</title>
+
+</head>
+
+<script type="text/javascript" src="../src/Sigilizer.js"></script>
+
+
+<script>
+
+var sigilizer;
+window.onload = function () {
+  sigilizer = new Sigilizer();
+}
+function getSigil(_currentWill){
+	sigilizer.sigilize(_currentWill);
+  document.getElementById('doneSigilShow').innerHTML = sigilizer.sigil;
+}
+
+</script>
+<body>
+
+  <div id="contentSigil">
+          <div id="sigilForm" >
+          	  <input maxlength="200" class="sigilgeneratorTextarea" name="textfieldSigil" type="text" id="textfieldSigil" value="It is my will to sigilize." autocomplete='off'/>
+              <div id="sigilizeButtons">
+                <input class="buttonStyle" type="submit" name="button" id="buttonSigilize" value="Sigilize it!" onclick="getSigil(document.getElementById('textfieldSigil').value)" />
+              </div>
+              <div id="doneSigilShow"></div>
+          </div>
+  </div>
+</body>
+</html>
