@@ -3,7 +3,9 @@ sigilizer
 
 A script that generate sigils from input intents.
 It is the core engine form the Sigilizer project:
+
 http://caostar.com/sigilizer/
+
 http://caostar.com/thoughts/the-sigilizer/2013/12/
 
 //////////
